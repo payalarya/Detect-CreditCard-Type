@@ -1,8 +1,13 @@
 package main.java.detectcreditcardtype.pojos;
 
+import java.io.Serializable;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
 import main.java.detectcreditcardtype.spi.CreditCardType;
 
-public class GetCreditCardDetailsResponse {
+@XmlRootElement
+public class GetCreditCardDetailsResponse implements Serializable{
 	
 	private String error;
 	private CreditCardType[] creditCardType;

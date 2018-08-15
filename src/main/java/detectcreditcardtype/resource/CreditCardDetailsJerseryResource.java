@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.MediaType;
@@ -20,18 +21,21 @@ public class CreditCardDetailsJerseryResource {
 
 	private final static Logger logger = Logger.getLogger(CreditCardDetailsJerseryResource.class.getName());
 	protected CreditCardDetailsJerseryDelegate creditCardDetailsDelegate;
-
+	
+	@PostConstruct
 	public void postConstruct() {
 		creditCardDetailsDelegate = new CreditCardDetailsJerseryDelegate();
 	}
-
+	
 	public void preDestroy() {
 		logger.info("JerseyResource.init : " + this.getClass().getName());
 	}
 
 	@GET
 	@Path(CreditCardServiceConstants.FETCH_CREDIT_CARD_DETAILS)
-	public Response fetchCreditCardDetails(GetCreditCardDetailsRequest request) {
+	public Response fetchCreditCardDetails(@PathParam("cardNumber") String cardNumber) {
+		GetCreditCardDetailsRequest request = new  GetCreditCardDetailsRequest();
+		request.setCardNumber(cardNumber);
 		return creditCardDetailsDelegate.fetchCreditCardDetails(request);
 
 	}

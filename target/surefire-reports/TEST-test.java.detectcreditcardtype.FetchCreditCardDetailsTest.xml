@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="120" failures="0" name="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" time="0.068" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.162-b12"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type"/>
+    <property name="java.runtime.version" value="1.8.0_162-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/cg/dctzpbrx34g24lq3nt8_xp2c0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/payalarya/Downloads/apache-maven-3.5.4/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/payalarya/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/payalarya/Downloads/apache-maven-3.5.4/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.6"/>
+    <property name="library.jansi.path" value="/Users/payalarya/Downloads/apache-maven-3.5.4/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/payalarya"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="payalarya"/>
+    <property name="java.class.path" value="/Users/payalarya/Downloads/apache-maven-3.5.4/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -N"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_162"/>
+    <property name="java.ext.dirs" value="/Users/payalarya/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/payalarya/Downloads/apache-maven-3.5.4"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[0: creditCard(4) should be of type VISA]" time="0.005"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[0: creditCard(4) should be of type VISA]" time="0.004"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[0: creditCard(4) should be of type VISA]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[1: creditCard(411) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[1: creditCard(411) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[1: creditCard(411) should be of type VISA]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[2: creditCard(4111111111111111) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[2: creditCard(4111111111111111) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[2: creditCard(4111111111111111) should be of type VISA]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[3: creditCard(4012888888881881) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[3: creditCard(4012888888881881) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[3: creditCard(4012888888881881) should be of type VISA]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[4: creditCard(4222222222222) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[4: creditCard(4222222222222) should be of type VISA]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[4: creditCard(4222222222222) should be of type VISA]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[5: creditCard(2221) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[5: creditCard(2221) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[5: creditCard(2221) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[6: creditCard(2222) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[6: creditCard(2222) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[6: creditCard(2222) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[7: creditCard(5555555555554444) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[7: creditCard(5555555555554444) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[7: creditCard(5555555555554444) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[8: creditCard(5454545454545454) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[8: creditCard(5454545454545454) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[8: creditCard(5454545454545454) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[9: creditCard(5105105105105100) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[9: creditCard(5105105105105100) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[9: creditCard(5105105105105100) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[10: creditCard(2221000000000009) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[10: creditCard(2221000000000009) should be of type MASTERCARD]" time="0.002"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[10: creditCard(2221000000000009) should be of type MASTERCARD]" time="0.002"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[11: creditCard(5255419980535069) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[11: creditCard(5255419980535069) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[11: creditCard(5255419980535069) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[12: creditCard(5325179932240400) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[12: creditCard(5325179932240400) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[12: creditCard(5325179932240400) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[13: creditCard(5281787130587299) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[13: creditCard(5281787130587299) should be of type MASTERCARD]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[13: creditCard(5281787130587299) should be of type MASTERCARD]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[14: creditCard(347138769411265) should be of type AMEX]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[14: creditCard(347138769411265) should be of type AMEX]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[14: creditCard(347138769411265) should be of type AMEX]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[15: creditCard(375058920411332) should be of type AMEX]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[15: creditCard(375058920411332) should be of type AMEX]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[15: creditCard(375058920411332) should be of type AMEX]" time="0.002"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[16: creditCard(39) should be of type DINERS_CLUB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[16: creditCard(39) should be of type DINERS_CLUB]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[16: creditCard(39) should be of type DINERS_CLUB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[17: creditCard(30569309025904) should be of type DINERS_CLUB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[17: creditCard(30569309025904) should be of type DINERS_CLUB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[17: creditCard(30569309025904) should be of type DINERS_CLUB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[18: creditCard(6) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[18: creditCard(6) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[18: creditCard(6) should be of type DISCOVER]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[19: creditCard(6011000400000000) should be of type DISCOVER]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[19: creditCard(6011000400000000) should be of type DISCOVER]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[19: creditCard(6011000400000000) should be of type DISCOVER]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[20: creditCard(6011111111111117) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[20: creditCard(6011111111111117) should be of type DISCOVER]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[20: creditCard(6011111111111117) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[21: creditCard(6011000990139424) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[21: creditCard(6011000990139424) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[21: creditCard(6011000990139424) should be of type DISCOVER]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[22: creditCard(6011419210574576) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[22: creditCard(6011419210574576) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[22: creditCard(6011419210574576) should be of type DISCOVER]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[23: creditCard(6221258812340000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[23: creditCard(6221258812340000) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[23: creditCard(6221258812340000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[24: creditCard(6221260000000000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[24: creditCard(6221260000000000) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[24: creditCard(6221260000000000) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[25: creditCard(6) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[25: creditCard(6) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[25: creditCard(6) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[26: creditCard(62) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[26: creditCard(62) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[26: creditCard(62) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[27: creditCard(6221260000000000000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[27: creditCard(6221260000000000000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[27: creditCard(6221260000000000000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[28: creditCard(6222000000000000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[28: creditCard(6222000000000000) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[28: creditCard(6222000000000000) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[29: creditCard(6223830601214842) should be of type UNIONPAY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[29: creditCard(6223830601214842) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[29: creditCard(6223830601214842) should be of type UNIONPAY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[30: creditCard(3588720686441012) should be of type JCB]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[30: creditCard(3588720686441012) should be of type JCB]" time="0.002"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[30: creditCard(3588720686441012) should be of type JCB]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[31: creditCard(3589003075247848) should be of type JCB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[31: creditCard(3589003075247848) should be of type JCB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[31: creditCard(3589003075247848) should be of type JCB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[32: creditCard(3530822637252230) should be of type JCB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[32: creditCard(3530822637252230) should be of type JCB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[32: creditCard(3530822637252230) should be of type JCB]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[33: creditCard(5620763730860303) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[33: creditCard(5620763730860303) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[33: creditCard(5620763730860303) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[34: creditCard(6856860244118336) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[34: creditCard(6856860244118336) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[34: creditCard(6856860244118336) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[35: creditCard(6921737500626684) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[35: creditCard(6921737500626684) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[35: creditCard(6921737500626684) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[36: creditCard(6) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[36: creditCard(6) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[36: creditCard(6) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[37: creditCard(62) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[37: creditCard(62) should be of type MAESTRO]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[37: creditCard(62) should be of type MAESTRO]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[38: creditCard(2721000000000004) should be of type UNKNOWN]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[38: creditCard(2721000000000004) should be of type UNKNOWN]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[38: creditCard(2721000000000004) should be of type UNKNOWN]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="allParametersSane[39: creditCard() should be of type EMPTY]" time="0"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForCardNumber[39: creditCard() should be of type EMPTY]" time="0.001"/>
+  <testcase classname="test.java.detectcreditcardtype.FetchCreditCardDetailsTest" name="testForIncrementingNumbers[39: creditCard() should be of type EMPTY]" time="0"/>
+</testsuite>
