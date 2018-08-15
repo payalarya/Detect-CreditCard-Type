@@ -30,8 +30,7 @@ public class CreditCardDetailsServiceImpl implements CreditCardDetailsService {
 	public GetCreditCardDetailsResponse fetchCreditCardDetails(GetCreditCardDetailsRequest request)
 			throws CreditCardException {
 		logger.info("Calling the spi layer ;");
-		GetCreditCardDetailsResponse response = FetchCreditCardDetails.invoke(request);
-		return response;
+		return FetchCreditCardDetails.newInstance().invoke(request);
 	}
 
 }

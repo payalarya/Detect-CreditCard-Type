@@ -10,9 +10,14 @@ import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsResponse;
 
 public class FetchCreditCardDetails {
   private final static Logger logger = Logger.getLogger(FetchCreditCardDetails.class.getName());
+  
+  public static FetchCreditCardDetails newInstance() {
+	  return new FetchCreditCardDetails();	  
+  }
+
 
 	
-	public static GetCreditCardDetailsResponse invoke(GetCreditCardDetailsRequest request) {
+	public GetCreditCardDetailsResponse invoke(GetCreditCardDetailsRequest request) {
 		GetCreditCardDetailsResponse response = new GetCreditCardDetailsResponse();
 		logger.info("Processing the request :");
 		//Either we can check for the strict match or for normal.
