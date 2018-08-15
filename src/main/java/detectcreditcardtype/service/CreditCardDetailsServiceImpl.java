@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 import main.java.detectcreditcardtype.Exception.CreditCardException;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsRequest;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsResponse;
+import main.java.detectcreditcardtype.spi.FetchCreditCardDetails;
 
 public class CreditCardDetailsServiceImpl implements CreditCardDetailsService {
 	private final static Logger logger = Logger.getLogger(CreditCardDetailsServiceImpl.class.getName());
@@ -28,8 +29,9 @@ public class CreditCardDetailsServiceImpl implements CreditCardDetailsService {
 
 	public GetCreditCardDetailsResponse fetchCreditCardDetails(GetCreditCardDetailsRequest request)
 			throws CreditCardException {
-		// TODO Auto-generated method stub
-		return null;
+		logger.info("Calling the spi layer ;");
+		GetCreditCardDetailsResponse response = FetchCreditCardDetails.invoke(request);
+		return response;
 	}
 
 }

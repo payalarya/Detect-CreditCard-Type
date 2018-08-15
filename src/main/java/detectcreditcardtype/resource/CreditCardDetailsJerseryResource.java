@@ -11,6 +11,7 @@ import javax.ws.rs.core.MediaType;
 
 import main.java.detectcreditcardtype.constants.CreditCardServiceConstants;
 import main.java.detectcreditcardtype.delegate.CreditCardDetailsJerseryDelegate;
+import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsRequest;
 
 @Path(CreditCardServiceConstants.CONTEXT_ROOT)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -18,22 +19,20 @@ import main.java.detectcreditcardtype.delegate.CreditCardDetailsJerseryDelegate;
 public class CreditCardDetailsJerseryResource {
 
 	private final static Logger logger = Logger.getLogger(CreditCardDetailsJerseryResource.class.getName());
-	protected CreditCardDetailsJerseryDelegate CreditCardDetailsDelegate;
+	protected CreditCardDetailsJerseryDelegate creditCardDetailsDelegate;
 
 	public void postConstruct() {
-		CreditCardDetailsDelegate = new CreditCardDetailsJerseryDelegate();
+		creditCardDetailsDelegate = new CreditCardDetailsJerseryDelegate();
 	}
 
 	public void preDestroy() {
-		logger.info("BaseJerseyResource.init : " + this.getClass().getName());
+		logger.info("JerseyResource.init : " + this.getClass().getName());
 	}
 
 	@GET
 	@Path(CreditCardServiceConstants.FETCH_CREDIT_CARD_DETAILS)
-	public Response payDues() {
-
-		return Response.ok().build();
-		// return paymentDelegate.payDues(request);
+	public Response fetchCreditCardDetails(GetCreditCardDetailsRequest request) {
+		return creditCardDetailsDelegate.fetchCreditCardDetails(request);
 
 	}
 }

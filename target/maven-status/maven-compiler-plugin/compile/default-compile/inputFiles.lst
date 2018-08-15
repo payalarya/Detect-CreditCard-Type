@@ -1,7 +1,7 @@
+/Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/spi/CreditCardType.java
 /Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/Exception/CreditCardServiceErrorCode.java
 /Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/pojos/GetCreditCardDetailsRequest.java
 /Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/service/CreditCardDetailsServiceImpl.java
-/Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/utils/CreditCardUtils.java
 /Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/processor/CreditCardDetailsJerseryProcessor.java
 /Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/resource/CreditCardDetailsJerseryResource.java
 /Users/payalarya/Documents/Payal/PaypalAssignment/Detect-CreditCard-Type/src/main/java/detectcreditcardtype/constants/CreditCardServiceConstants.java
