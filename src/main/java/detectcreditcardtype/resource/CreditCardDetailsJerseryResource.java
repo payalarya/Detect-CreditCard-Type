@@ -13,6 +13,7 @@ import javax.ws.rs.core.MediaType;
 import main.java.detectcreditcardtype.constants.CreditCardServiceConstants;
 import main.java.detectcreditcardtype.delegate.CreditCardDetailsJerseryDelegate;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsRequest;
+import javax.annotation.PostConstruct;
 
 @Path(CreditCardServiceConstants.CONTEXT_ROOT)
 @Consumes(MediaType.APPLICATION_JSON)
