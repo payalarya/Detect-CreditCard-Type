@@ -4,9 +4,9 @@ import main.java.detectcreditcardtype.spi.CreditCardType;
 
 public class GetCreditCardDetailsResponse {
 	
-	String error;
-	CreditCardType[] creditCardType;
-	
+	private String error;
+	private CreditCardType[] creditCardType;
+	private boolean validCard;
 	
 	public CreditCardType[] getCreditCardType() {
 		return creditCardType;
@@ -23,5 +23,15 @@ public class GetCreditCardDetailsResponse {
 	public void setError(String error) {
 		this.error = error;
 	}
+
+	public boolean isValidCard() {
+		return validCard;
+	}
+
+	public void setValidCard(boolean validCard) {
+		this.validCard = validCard;
+	}
+	
+	
 
 }

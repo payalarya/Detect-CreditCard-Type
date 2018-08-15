@@ -2,7 +2,7 @@ package main.java.detectcreditcardtype.processor;
 
 import java.util.logging.Logger;
 
-import main.java.detectcreditcardtype.Exception.CreditCardException;
+import main.java.detectcreditcardtype.exception.CreditCardException;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsRequest;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsResponse;
 import main.java.detectcreditcardtype.service.CreditCardDetailsService;

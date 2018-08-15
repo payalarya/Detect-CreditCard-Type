@@ -15,8 +15,12 @@ public class FetchCreditCardDetails {
 	public static GetCreditCardDetailsResponse invoke(GetCreditCardDetailsRequest request) {
 		GetCreditCardDetailsResponse response = new GetCreditCardDetailsResponse();
 		logger.info("Processing the request :");
+		//Either we can check for the strict match or for normal.
 		CreditCardType[] creditCardType = FetchCreditCardDetails.forCardNumber(request.getCardNumber());
-		logger.info(Arrays.deepToString(creditCardType));
+		
+		logger.info("Matching cards : " +  Arrays.deepToString(creditCardType));
+		
+		if(creditCardType !=null) response.setValidCard(creditCardType.length == 0 ? false : true);
 		response.setCreditCardType(creditCardType);
 		
 		return response;
@@ -42,7 +46,7 @@ public class FetchCreditCardDetails {
 				matchedCardTypes.add(creditCardType);
 			}
 		}
-		// This removes UNKNOWN if anything else is matched
+		// Remove UNKNOWN if anything else is matched
 		if (matchedCardTypes.size() > 1) {
 			matchedCardTypes.remove(CreditCardType.UNKNOWN);
 		}

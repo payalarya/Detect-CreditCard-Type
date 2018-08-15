@@ -2,7 +2,7 @@ package main.java.detectcreditcardtype.service;
 
 import java.util.logging.Logger;
 
-import main.java.detectcreditcardtype.Exception.CreditCardException;
+import main.java.detectcreditcardtype.exception.CreditCardException;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsRequest;
 import main.java.detectcreditcardtype.pojos.GetCreditCardDetailsResponse;
 import main.java.detectcreditcardtype.spi.FetchCreditCardDetails;
@@ -18,9 +18,9 @@ public class CreditCardDetailsServiceImpl implements CreditCardDetailsService {
 	}
 
 	/*
-	 * Gets the single instance of PaymentServiceImpl
+	 * Gets the single instance of CreditCardDetailsServiceImpl
 	 * 
-	 * @return single instance of PaymentServiceImpl
+	 * @return single instance of CreditCardDetailsServiceImpl
 	 */
 	public static CreditCardDetailsService getInstance() {
 

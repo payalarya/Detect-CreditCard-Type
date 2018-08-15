@@ -1,4 +1,4 @@
-package main.java.detectcreditcardtype.Exception;
+package main.java.detectcreditcardtype.exception;
 
 public class CreditCardServiceErrorCode {
 
