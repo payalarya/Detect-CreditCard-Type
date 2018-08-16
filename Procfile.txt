@@ -1,1 +1,1 @@
-web: java -jar target/Detect-CreditCard-Type-1.0.1/WEB-INF/lib/webapp-runner-8.5.31.0.jar --port $8080 target/*.war
+web: java $JAVA_OPTS -jar arget/dependency/webapp-runner.jar --port $8080 target/Detect-CreditCard-Type-1.0.1.war

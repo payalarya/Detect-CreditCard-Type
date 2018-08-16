@@ -5,7 +5,7 @@
 	version="3.0">
 	    <display-name>Detect CreditCard Type</display-name>
 		<servlet>
-		<servlet-name>DetectCreditCardType</servlet-name>
+		<servlet-name>DetectCreditCardtype</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
 		     <param-name>com.sun.jersey.config.property.packages</param-name>
@@ -15,7 +15,7 @@
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>DetectCreditCardType</servlet-name>
+		<servlet-name>DetectCreditCardtype</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 </web-app>
