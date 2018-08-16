@@ -16,8 +16,8 @@ public class CreditCardDetailsJerseryDelegate {
 		GetCreditCardDetailsResponse response = null;
 		try {
 			logger.info("Call processor to fetch the data");
-			//Ideally we don't create static method in processor class but I'm writing only one method 
-			//so I create static method.
+			//Ideally we should not create static method but I'm writing only one method 
+			//so I create static method instead of creating an object.
 			response = CreditCardDetailsJerseryProcessor.fetchCreditCardDetails(request);
 			logger.info("Sucessful response received");
 		} catch (CreditCardException e) {
