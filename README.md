@@ -1,32 +1,34 @@
+About  :
 DetectCreditCardType is a utility library which returns possible credit card types based on the entered credit card number.
+This utility accepts the input and output in JSON format.
 
-Sample Input/Output.
+Request :
+The request contains only card number.
+Sample reuest : Detect-CreditCard-Type-1.0.1/detectcreditcardtype/fetchCreditCardDetails/{cardNumber}
 
-CreditCardType[] types = CreditCardType.forCardNumber("6");
-System.out.println(Arrays.deepToString(types)); // Should return [DISCOVER, MAESTRO, UNIONPAY]
+Response :
+Request contains ArrayOfCreditCardType, validCard(boolean)  and error message.
+{
+"creditCardType":"",
+"validCard":""
+}
+API will return error message in response only in case of negative scenario.
 
-types = CreditCardType.forCardNumber("62");
-System.out.println(Arrays.deepToString(types)); // Should return [MAESTRO, UNIONPAY]
+curl command to test API :
+curl -k http://localhost:8080/Detect-CreditCard-Type-1.0.1/detectcreditcardtype/fetchCreditCardDetails/{cardNumber}
 
-types = CreditCardType.forCardNumber("4111111111");
-System.out.println(Arrays.deepToString(types)); // Should return [VISA]
+e.g.
+curl -k http://localhost:8080/Detect-CreditCard-Type-1.0.1/detectcreditcardtype/fetchCreditCardDetails/4
+Result :  {"creditCardType":"VISA","validCard":"true"}
 
-CreditCardType type = types[0];
+Deployment :
+ I've deployed the utility in Heroku. You can access this using below link.
+URL to hit Heroku App  : 
+http://testcreditcardservice.herokuapp.com/detectcreditcardtype/fetchCreditCardDetails/{cardNumber}
 
-type.getSecurityCodeName();   // Should return CVV
-type.getSecurityCodeLength(); // Should return 3 (size of CVV)
-type.getMinCardLength();      // Minimum Card length 16
-type.getMaxCardLength();      // Maximum Card length 16
-type.getSpaceIndices();       // Indices useful for formatting
-
-Url to hit Herokuapp  : 
-
+e.g.
 http://testcreditcardservice.herokuapp.com/detectcreditcardtype/fetchCreditCardDetails/4
 Result : {"creditCardType":"VISA","validCard":"true"}
 
 http://testcreditcardservice.herokuapp.com/detectcreditcardtype/fetchCreditCardDetails/62
 Result : {"creditCardType":["MAESTRO","UNIONPAY"],"validCard":"true"}
-
-curl command to test api :
-curl -k http://localhost:8080/Detect-CreditCard-Type-1.0.1/detectcreditcardtype/fetchCreditCardDetails/4
-Result :  {"creditCardType":"VISA","validCard":"true"}
