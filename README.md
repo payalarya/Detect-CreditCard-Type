@@ -27,5 +27,6 @@ Result : {"creditCardType":"VISA","validCard":"true"}
 http://testcreditcardservice.herokuapp.com/detectcreditcardtype/fetchCreditCardDetails/62
 Result : {"creditCardType":["MAESTRO","UNIONPAY"],"validCard":"true"}
 
-Curl command to test api :
-
+curl command to test api :
+curl -k http://localhost:8080/Detect-CreditCard-Type-1.0.1/detectcreditcardtype/fetchCreditCardDetails/4
+Result :  {"creditCardType":"VISA","validCard":"true"}
